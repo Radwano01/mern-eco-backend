@@ -21,7 +21,7 @@ mongoose.connect(process.env.MONGO_URI)
     })
 })
 .catch((err)=>{
-    res.status(500).json(err)
+   console.log(err)
 })
 
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
