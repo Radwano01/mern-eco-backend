@@ -28,7 +28,7 @@ const register = async(req,res)=>{
                     from: process.env.EMAIL,
                     to: email,
                     subject: 'Email Verification',
-                    text: `Click the following link to verify your email: <p><a href="http://localhost:5000/verify/${email}/${verificationToken}">Click here to proceed</a></p>`,
+                    text: `Click the following link to verify your email: <p><a href="https://mern-eco-shop.netlify.app/verify/${email}/${verificationToken}">Click here to proceed</a></p>`,
                 };
     
                 transporter.sendMail(mailOptions, (error, info) => {
