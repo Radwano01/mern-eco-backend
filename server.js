@@ -58,6 +58,6 @@ const authRoute = require("./routes/auth").router
 const productsRoute = require("./routes/products").router
 const ordersRoute = require("./routes/orders").router
 
-app.use("/", authRoute)
-app.use("/", productsRoute)
-app.use("/", ordersRoute)
+app.use("/api", authRoute)
+app.use("/api", productsRoute)
+app.use("/api", ordersRoute)
